@@ -1,0 +1,210 @@
+$white: #fff;
+$gray: rgb(228, 228, 228);
+$black: #000;
+
+$color-one: rgba(250, 204, 68, 1);
+$color-two: rgba(230, 75, 54, 1);
+$color-three: rgba(199, 49, 45, 1);
+$color-four: rgba(154, 43, 64, 1);
+$color-five: rgba(112, 38, 71, 1);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji,
+        Segoe UI Emoji;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1em;
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .circle {
+            width: 1em;
+            height: 1em;
+            background-color: $color-two;
+            border-radius: 50%;
+        }
+
+        .title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding-left: 0.3em;
+        }
+    }
+
+    nav {
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .item {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: $color-two;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4em;
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 7em 0 0 2em;
+        letter-spacing: -.3em;
+        
+        .title {
+            font-size: 4rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 9rem;
+            font-weight: bold;
+        }
+    }
+
+    .pallete {
+        width: 100%;
+
+        .bar-one {
+            width: 100%;
+            height: 3em;
+            background-color: $color-one;
+        }
+
+        .bar-two {
+            width: 100%;
+            height: 3em;
+            background-color: $color-two;
+        }
+
+        .bar-three {
+            width: 100%;
+            height: 3em;
+            background-color: $color-three;
+        }
+
+        .bar-four {
+            width: 100%;
+            height: 3em;
+            background-color: $color-four;
+        }
+
+        .bar-five {
+            width: 100%;
+            height: 3em;
+            background-color: $color-five;
+        }
+    }
+
+    .cards {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 4em 2em 4em 2em;
+
+        .card {
+            width: 300px;
+            height: 500px;
+            background-color: $gray;
+            border-radius: .5em;
+            margin: 1em;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 0;
+
+    color: $white;
+    background-color: $black;
+
+    .logo {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .circle {
+            width: 1em;
+            height: 1em;
+            background-color: $color-two;
+            border-radius: 50%;
+        }
+    }
+
+    .menu {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .divider {
+            width: 0.1em;
+            height: 2.5em;
+            background-color: $white;
+        }
+
+        .item {
+            padding-left: 1em;
+        }
+    }
+
+    .social-medias {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .item:not(:first-child) {
+            padding-left: 1em;
+        }
+    }
+}
